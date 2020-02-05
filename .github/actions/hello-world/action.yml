@@ -1,0 +1,13 @@
+name: 'Hello World'
+description: '一番頭のdescriptionに書いてること'
+inputs:
+  who-to-greet: # id of input
+    description: 'Who-to-greetの中のdescriptionに書いてること'
+    requiered: true
+    default: 'Who-to-greetの中のdescriptionが定義されていない時これ出る'
+outputs:
+  time: # id of output
+    description: 'timeの中のdescriptionだよ'
+runs:
+  using: 'node12'
+  main: '../../../index.js'
